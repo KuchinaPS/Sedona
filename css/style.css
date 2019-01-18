@@ -1,3 +1,155 @@
 body {
+    font-family: "PT Sans",Arial, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
     background-color: #f2f2f2;
+    color: #333333;
+    text-transform: uppercase;
+
+}
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.main-header {
+    background-color:#ffffff;
+}
+
+.main-navigation {
+
+}
+
+.site-navigation {
+    list-style: none;
+}
+
+.site-navigation a {
+    color: #000000;
+    text-decoration: none;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.promo {
+    min-height: 500px;
+    background-color: #3d75a0;
+    background-image: url("../img/welcome.png"), url("../img/background photo.png.jpg");
+    background-repeat: no-repeat;
+}
+
+.features {
+    background-color:#ffffff;
+}
+.features-title {
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.features-list {
+    list-style: none;
+
+}
+
+.features-item {
+
+}
+
+.features-item h3 {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.features-item-blue {
+    background-color:#81b3d2;
+    color: #ffffff;
+}
+.features-item-gray {
+    background-color:#eeeeee;
+}
+
+.offers {
+    background-color: #ffffff;
+}
+.search {
+    background-color: #ffffff;
+}
+.title-search {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+}
+.search p {
+    line-height: 24px;
+}
+.button {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.button-search {
+    font-size: 21px;
+    line-height: 26px;
+    background-color:#766357;
+}
+.main-footer {
+    background-color: #ffffff;
+}
+.footer-hashtag {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.footer-social-list {
+    list-style: none;
+}
+.footer-copyright {
+    line-height: 21px;
+}
+/***inner page********************************/
+.filtres {
+    background-color: #3d75a0;
+    background-image:url("../img/filter background.jpg");
+    background-repeat: no-repeat;
+}
+.catalog {
+    background-color: #ffffff;
+}
+.catalog-list {
+    list-style: none;
+}
+
+.title-hotel {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+
+}
+
+.title-hotel a {
+    color: #000000;
+}
+
+.button-more,
+.button-booking {
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.button-more {
+    background-color:#81b3d2;
+}
+.button-booking {
+    background-color:#766357;
+}
+.rating {
+    color: #666666;
+    background-color:#f2f2f2;
 }
