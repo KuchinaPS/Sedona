@@ -6,6 +6,10 @@ body {
     background-color: #f2f2f2;
     color: #333333;
     text-transform: uppercase;
+    min-width: 1280px;
+    margin: 0;
+    padding: 0;
+
 
 }
 a {
@@ -16,30 +20,73 @@ img {
     max-width: 100%;
     height: auto;
 }
+.visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+
+}
 
 .main-header {
     background-color:#ffffff;
+    width:1200px;
+    margin: 0 auto;
+    display: flex;
+
 }
 
+.main-header-logo {
+position: absolute;
+}
 .main-navigation {
+    display: flex;
+    flex-direction: row;
 
-}
+  }
 
 .site-navigation {
     list-style: none;
+    display: flex;
+    flex-direction: row;
+
+    padding: 0;
+    margin: 0;
 }
 
+.site-navigation-item {
+    margin: 0;
+    padding: 15px 70px;
+
+}
+/*.site-navigation-item:nth-child(2){*/
+    /*margin-right: 50px;*/
+/*}*/
 .site-navigation a {
     color: #000000;
     text-decoration: none;
     line-height: 26px;
     font-weight: 700;
-}
 
+    display: block;
+}
+.main-page {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 auto;
+}
 .promo {
-    min-height: 500px;
+
+    min-height: 510px;
     background-color: #3d75a0;
-    background-image: url("../img/welcome.png"), url("../img/background photo.png.jpg");
+    background-image: url("../img/background photo2.jpg");
     background-repeat: no-repeat;
 }
 
