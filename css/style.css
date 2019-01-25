@@ -1,5 +1,5 @@
 body {
-    font-family: "PT Sans",Arial, sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 14px;
     line-height: 21px;
     font-weight: 400;
@@ -12,6 +12,7 @@ body {
 
 
 }
+
 a {
     text-decoration: none;
 }
@@ -20,6 +21,7 @@ img {
     max-width: 100%;
     height: auto;
 }
+
 .visually-hidden {
     position: absolute;
 
@@ -36,39 +38,49 @@ img {
 }
 
 .main-header {
-    background-color:#ffffff;
-    width:1200px;
+    background-color: #ffffff;
+    width: 1200px;
     margin: 0 auto;
     display: flex;
+    position: relative;
 
 }
 
 .main-header-logo {
-position: absolute;
+    position: absolute;
+    left: 531px;
 }
+
 .main-navigation {
     display: flex;
-    flex-direction: row;
 
-  }
+    width: 1200px;
+
+}
 
 .site-navigation {
     list-style: none;
     display: flex;
-    flex-direction: row;
-
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    width: 1200px;
 }
 
 .site-navigation-item {
     margin: 0;
-    padding: 15px 70px;
+    padding: 14px 75px;
 
 }
-/*.site-navigation-item:nth-child(2){*/
-    /*margin-right: 50px;*/
-/*}*/
+
+.site-navigation-item:first-child {
+    padding-left: 73px;
+}
+
+.site-navigation-item:nth-child(2) {
+    margin-right: 240px;
+}
+
 .site-navigation a {
     color: #000000;
     text-decoration: none;
@@ -77,64 +89,117 @@ position: absolute;
 
     display: block;
 }
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+    color: #81b3d2;
+}
+
+.site-navigation a:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
 .main-page {
     width: 1200px;
     margin: 0 auto;
-    padding: 0 auto;
+    background-color: #ffffff;
 }
-.promo {
 
+.promo {
     min-height: 510px;
+    width: 1199px;
     background-color: #3d75a0;
-    background-image: url("../img/background photo2.jpg");
+    background-image: url("../img/background photo.jpg");
     background-repeat: no-repeat;
+    background-position: 0 -54px;
+}
+
+.promo-welcome {
+    margin-top: 76px;
+    margin-bottom: 17px;
+    margin-left: 371px;
+}
+
+.promo-decor {
+    margin-bottom: -7px;
+    max-width: 1202px;
+    margin-left: -1px;
 }
 
 .features {
-    background-color:#ffffff;
+    background-color: #ffffff;
 }
+
 .features-title {
     font-size: 21px;
+    line-height: 24px;
     font-weight: 700;
+
+    width: 440px;
+    text-align: center;
+    margin: 62px auto;
+}
+
+.features-text {
+    margin-top: -30px;
+    text-align: center;
 }
 
 .features-list {
     list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin-top: 53px;
+
 
 }
 
 .features-item {
-
+    display: flex;
+    flex-direction: row;
 }
-
+.features-item-container {
+    display: flex;
+    flex-direction: column;
+}
 .features-item h3 {
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
+    text-align: center;
+    width: 120px;
+    margin: 42px auto;
 }
 
 .features-item-blue {
-    background-color:#81b3d2;
+    background-color: #81b3d2;
     color: #ffffff;
 }
+
 .features-item-gray {
-    background-color:#eeeeee;
+    background-color: #eeeeee;
 }
 
 .offers {
     background-color: #ffffff;
 }
+
 .search {
     background-color: #ffffff;
 }
+
 .title-search {
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
 }
+
 .search p {
     line-height: 24px;
 }
+
 .button {
     color: #ffffff;
     font-weight: 700;
@@ -143,11 +208,13 @@ position: absolute;
 .button-search {
     font-size: 21px;
     line-height: 26px;
-    background-color:#766357;
+    background-color: #766357;
 }
+
 .main-footer {
     background-color: #ffffff;
 }
+
 .footer-hashtag {
     font-size: 21px;
     line-height: 26px;
@@ -157,18 +224,22 @@ position: absolute;
 .footer-social-list {
     list-style: none;
 }
+
 .footer-copyright {
     line-height: 21px;
 }
+
 /***inner page********************************/
 .filtres {
     background-color: #3d75a0;
-    background-image:url("../img/filter background.jpg");
+    background-image: url("../img/filter background.jpg");
     background-repeat: no-repeat;
 }
+
 .catalog {
     background-color: #ffffff;
 }
+
 .catalog-list {
     list-style: none;
 }
@@ -191,12 +262,14 @@ position: absolute;
 }
 
 .button-more {
-    background-color:#81b3d2;
+    background-color: #81b3d2;
 }
+
 .button-booking {
-    background-color:#766357;
+    background-color: #766357;
 }
+
 .rating {
     color: #666666;
-    background-color:#f2f2f2;
+    background-color: #f2f2f2;
 }
