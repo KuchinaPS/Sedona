@@ -157,12 +157,12 @@ img {
 .features-item {
 
     display: flex;
-    flex-direction: row;
 }
 
 .features-item-blue {
     width: 1200px;
 }
+
 .features-item-blue:nth-child(2) {
     flex-direction: row-reverse;
 }
@@ -206,12 +206,65 @@ img {
     background-color: #eeeeee;
 
 }
-.gray-container h3{
+
+.gray-container h3 {
 
 }
 
 .offers {
     background-color: #ffffff;
+}
+
+.offers-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+}
+
+.offers-item {
+    display: flex;
+    width: 400px;
+
+}
+.offers-container {
+    position: relative;
+}
+.offers-title {
+    font-size: 21px;
+    margin-top: 161px;
+}
+.offers-title::before{
+    content: "";
+
+    position: absolute;
+    left: 165px;
+    top: 57px;
+
+
+}
+.offers-title-house:before {
+    background-image: url("../img/icon-1.svg");
+    width: 75px;
+    height: 72px;
+}
+.offers-title-food:before {
+    background-image: url("../img/icon-3.svg");
+    width: 74px;
+    height: 70px;
+}
+.offers-title-souvenirs:before {
+    background-image: url("../img/icon-2.svg");
+    width: 64px;
+    height: 76px;
+}
+
+
+.offers-item p {
+    width: 290px;
+    padding: 0 60px;
 }
 
 .search {
