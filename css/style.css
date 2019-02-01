@@ -529,62 +529,126 @@ padding-left: 73px;
 }
 .result-control {
     width: 241px;
+    text-align: right;
+    margin-left: 165px;
+    position: relative;
 }
 .control {
     display: inline-block;
-    position: relative;
-}
-.control-up::before {
-    content: "";
     position: absolute;
-    width: 10px;
-    height: 10px;
-    background-color: red;
-    background-image: url("../img/icon-up-dir.svg");
-    background-repeat: no-repeat;
+
 }
-.control-down::before {
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background-color: red;
-    background-image: url("../img/icon-down-dir.svg");
+.control path {
+    fill: #cbcbcb;
+}
+
+.control path:hover,
+.control path:focus{
+     fill: #2d292a;
+ }
+
+.control path:active {
+    fill: #82b3d2;
+}
+
+.control-current path,
+.control-current path:hover,
+.control-current path:focus,
+.control-current path:active{
+    fill: #82b3d2;
+}
+
+.control-up {
+    right: 2px;
+    top: 36px;
+}
+.control-down {
+    right: -21px;
+    top: 36px;
 }
 .catalog {
     background-color: #ffffff;
+
 }
 
 .catalog-list {
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
 }
+.catalog-item {
+    display: flex;
+    flex-direction: row;
 
+}
+.catalog-image {
+    width: 165px;
+    padding: 28px 71px;
+    padding-right:0;
+}
+.catalog-photo {
+    width: 135px;
+    height: 90px;
+
+
+}
+.catalog-item-container {
+    margin-left: -30px;
+    width: 780px;
+}
 .title-hotel {
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
+    margin: 25px 33px 0;
+    padding: 0;
 
 }
 
 .title-hotel a {
     color: #000000;
 }
+.price-container p {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 0;
+}
+.price-container p:first-child {
+    margin-left: 32px;
+}
+.type {
+    width:110px;
+}
+.button-container {
+    margin-left: 31px;
+    margin-top: 4px;
+}
 
 .button-more,
 .button-booking {
     font-size: 14px;
     line-height: 21px;
+    padding: 5px 17px;
 }
 
 .button-more {
+    width: 110px;
     background-color: #81b3d2;
+    margin-right: 2px;
 }
 
 .button-booking {
+    width: 142px;
     background-color: #766357;
 }
 
 .rating {
     color: #666666;
     background-color: #f2f2f2;
+    align-self: flex-end;
+    margin-bottom: 33px;
+    margin-left: 32px;
+    padding: 3px 14px;
 }
