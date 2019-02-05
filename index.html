@@ -142,25 +142,29 @@
     </div>
 </footer>
 <section class="modal-search">
-    <form>
+    <form class="date-form">
         <div class="date">
-            <label for="arrival-date">Дата заезда:</label>
-            <input class="arrival" type="date" id="arrival-date">
-            <label for="departure-date">Дата выезда:</label>
-            <input class="departure" type="date" id="departure-date">
+            <p>
+                <label class="arrival-title" for="arrival-date">Дата заезда:</label>
+                <input class="arrival" type="text" id="arrival-date" placeholder="24 апреля 2017">
+            </p>
+            <p>
+                <label class="departure-title" for="departure-date">Дата выезда:</label>
+                <input class="departure" type="text" id="departure-date" placeholder="4 июля 2017">
+            </p>
         </div>
         <div class="quantity">
-            <label for="adult">Взрослые:</label>
-            <div class="adult-quantity">
+
+            <div class="adult-quantity"><label class="adult-title" for="adult">Взрослые:</label>
                 <div class="button button-less"></div>
-                <input class="adults" id="adult" type="text">
-                <div class="button button-more"></div>
+                <input class="adults" id="adult" type="text" placeholder="2">
+                <div class="button button-inc"></div>
             </div>
-            <label for="child">Дети:</label>
-            <div class="child-quantity">
+
+            <div class="child-quantity"> <label class="child-title" for="child">Дети:</label>
                 <div class="button button-less"></div>
-                <input class="children" id="child" type="text">
-                <div class="button button-more"></div>
+                <input class="children" id="child" type="text" placeholder="0">
+                <div class="button button-inc"></div>
             </div>
         </div>
         <button type="submit" class="button button-modal-search">Найти</button>

@@ -395,24 +395,111 @@ img {
 .modal-search {
     width: 568px;
     background-color: white;
-    text-align: center;
+    /*text-align: center;*/
     margin: 0 auto;
     position: relative;
     bottom: 705px;
 }
-.date {
-    display: block;
+.date p {
+    text-align: left;
+    padding-left: 57px;
+    padding-top: 55px;
+    margin: 0;
+    margin-bottom: -27px;
 }
 .date label {
     font-size: 14px;
     line-height: 26px;
     font-weight: 700;
 }
+
+.arrival-title {
+    padding-right: 18px;
+}
+.departure-title {
+    padding-right: 15px;
+}
+.date input {
+    border: none;
+    background-color:#f2f2f2;
+    width:346px;
+    height: 37px;
+}
+.date input::placeholder{
+    color:#000000;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+    padding-left: 13px;
+    text-transform: uppercase;
+    font-family: inherit;
+}
+.quantity {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    padding-right: 50px;
+    margin-top: 56px;
+    padding-left: 55px;
+}
+
 .adult-quantity,
 .child-quantity {
     display: inline-block;
 }
+.adult-quantity {
 
+}
+.child-quantity {
+    margin-left: 55px;
+}
+.quantity label {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+
+
+}
+.adult-title{
+    margin-right: 42px;
+}
+.child-title {
+    margin-right: 28px;
+
+}
+.button-less,
+.button-inc{
+    width: 38px;
+    height: 38px;
+    background-color:#f2f2f2;
+    display: inline-block;
+    vertical-align: middle;
+    margin: -6px;
+
+}
+
+.quantity input {
+    width: 38px;
+    height: 36px;
+    background-color:#f2f2f2;
+    border: none;
+    vertical-align: middle;
+
+
+}
+.quantity input::placeholder {
+    color:#000000;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+    padding-left: 13px;
+    text-transform: uppercase;
+    font-family: inherit;
+}
+.date-form .button-modal-search {
+    text-align: center;
+    border: none;
+}
 /***inner page********************************/
 .filter {
     background-color: #3d75a0;
@@ -631,13 +718,6 @@ padding-left: 73px;
 
 }
 
-.quantity {
-    font-size: 21px;
-    line-height: 26px;
-    font-weight: 700;
-    margin: 31px 0px;
-   padding-right: 50px;
-   }
 
 .result-sort,
 .sort-title {
