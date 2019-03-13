@@ -1,4 +1,10 @@
 
+@keyframes  shake {
+    0%, 100% { transform: translateX(0);}
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-10px);}
+    20%, 40%, 60%, 80% { transform: translateX(10px);}
+}
+
 body {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 14px;
@@ -368,7 +374,15 @@ button, input, optgroup, select, textarea {
     margin-top: -47px;
     min-height: 473px;
 }
+.map iframe {
+    background: #dfe7cd;
+    background-image: url(../img/map.jpg);
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 473px;
+    border: 0;
 
+}
 .main-footer {
     width: 1200px;
     margin: 0 auto;
@@ -474,9 +488,10 @@ button, input, optgroup, select, textarea {
 
 .modal-search {
     background-color: white;
+    display: none;
 
     position: absolute;
-    top: 2114px;
+    top: 2113px;
     left: 315px;
     width: 458px;
     padding: 55px;
@@ -486,9 +501,15 @@ button, input, optgroup, select, textarea {
     box-shadow: 0 2px 5px 0 #d4d2d2;
 
 }
-
+.modal-search-show {
+    display: block;
+}
+.modal-error {
+    animation-name: shake;
+    animation-duration: 0.6s;
+}
 .date-form .date-input {
-    width: 281px;
+    width: 288px;
     margin-bottom: 29px;
     margin-left: 15px;
     padding: 4px 40px 4px 15px;
@@ -700,7 +721,7 @@ button, input, optgroup, select, textarea {
 }
 
 .group-title {
-    padding-top: 30px;
+    padding-top: 28px;
     font-size: 16px;
     line-height: 21px;
     font-weight: 700;
@@ -710,13 +731,13 @@ button, input, optgroup, select, textarea {
 
 .typeOfhousing {
     width: 475px;
-    margin-top: -11px;
+    margin-top: -9px;
 
 }
 
 .cost {
-    width: 317px;
-    margin-left: 8px;
+    width: 316px;
+    margin-left: 10px;
     margin-top: -23px;
 }
 
@@ -727,7 +748,7 @@ button, input, optgroup, select, textarea {
 .price-controls {
     position: relative;
     height: 32px;
-    margin-bottom: 20px;
+    margin-bottom: 21px;
     font-size: 0;
     border: 2px solid #ffffff;
     border-radius: 2px;
@@ -827,7 +848,7 @@ button, input, optgroup, select, textarea {
 .btn-transparent {
     display: block;
     margin: 0 auto;
-    padding: 6px 30px;
+    padding: 6px 33px;
 
     font-size: 14px;
     line-height: 20px;
@@ -848,7 +869,7 @@ button, input, optgroup, select, textarea {
 
 .infrastructure {
     width: 241px;
-    margin-top: -11px;
+    margin-top: -9px;
     margin-right: 13px;
 }
 
@@ -859,7 +880,7 @@ button, input, optgroup, select, textarea {
 
 .result {
     padding-left: 73px;
-    margin: 0;
+    margin-bottom: 10px;
 
 }
 
@@ -870,7 +891,13 @@ button, input, optgroup, select, textarea {
     vertical-align: top;
 
 }
-
+.result-title {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    padding-top: 9px;
+    padding-right: 51px;
+}
 
 .result-sort,
 .sort-title {
@@ -969,6 +996,7 @@ button, input, optgroup, select, textarea {
 
 .catalog {
     background-color: #ffffff;
+    margin-bottom:5px;
 
 }
 
@@ -993,6 +1021,7 @@ button, input, optgroup, select, textarea {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
+    margin-bottom: -2px;
     border-top: 1px solid #f9f9f9;
     border-bottom: 1px solid #f9f9f9;
 
@@ -1003,8 +1032,8 @@ button, input, optgroup, select, textarea {
 }
 
 .catalog-image {
-    width: 165px;
-    padding: 28px 71px;
+    width: 163px;
+    padding: 28px 73px;
     padding-right: 0;
 }
 
@@ -1018,6 +1047,7 @@ button, input, optgroup, select, textarea {
 .catalog-item-container {
     margin-left: -30px;
     width: 780px;
+    margin-right: 2px;
 
 }
 
@@ -1045,12 +1075,13 @@ button, input, optgroup, select, textarea {
 
 .price-container p {
     display: inline-block;
-    margin-top: 8px;
+    margin-top: 6px;
     padding: 0;
 }
 
 .price-container p:first-child {
     margin-left: 32px;
+    margin-right: 3px;
 }
 
 .type {
@@ -1058,8 +1089,8 @@ button, input, optgroup, select, textarea {
 }
 
 .button-container {
-    margin-left: 31px;
-    margin-top: 4px;
+    margin-left: 32px;
+    margin-top: 3px;
 }
 
 .button-more,
@@ -1141,12 +1172,3 @@ button, input, optgroup, select, textarea {
     }
 }
 
-@-moz-document url-prefix() {
-    /*Mozilla*/
-    /*.date input {*/
-    /*padding-left: 13px;*/
-    /*margin-top: 5px;*/
-    /*margin-bottom: -5px;*/
-    /*}*/
-
-}
